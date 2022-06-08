@@ -18,10 +18,23 @@ SQL：操作数据库的编程语言
   ④单行注释--或# 多行注释/**/   
 3. sql语句分类
   ①DDL：数据定义语言（定义数据对象如数据库、表）   
+  数据库操作   
    ```sql
    # 查询所有数据库
    SHOW DATABASES
+   # 查询当前所在的数据库
+   SELECT DATABASE()
+   # 创建数据库，字符集utf8三个字节，不推荐，一般用utf8mb4
+   CREATE DATABASE [IF NOT EXISTS] 数据库名 [DEFAULT CHARSET 字符集] [COLLATE 排序规则]
+   # 删除数据库
+   DROP DATABASE [IF EXISTS] 数据库名
+   # 使用，选中，切换到数据库
+   USE 数据库名
    ```
+   表操作   
+   ~~~sql
+   
+   ~~~
 DML：数据操作语言
 DQL：数据查询语言
 DCL：数据控制语言
